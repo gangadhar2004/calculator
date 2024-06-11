@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Time Management App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Pomodoro Timer Section -->
+            <section id="pomodoro">
+                <h2>Pomodoro Timer</h2>
+                <div class="timer">
+                    <p id="timer">25:00</p>
+                    <button id="startPomodoroBtn">Start Pomodoro</button>
+                    <button id="startShortBreakBtn">Start Short Break</button>
+                    <button id="startLongBreakBtn">Start Long Break</button>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section id="notes">
+                <h2>Notes</h2>
+                <textarea id="notesTextarea" placeholder="Write your notes here..."></textarea>
+            </section>
+
+            <!-- Planner Section -->
+            <section id="planner">
+                <h2>Planner</h2>
+                <ul id="plannerList">
+                    <!-- Plans will be dynamically added here -->
+                </ul>
+                <div id="plannerControls">
+                    <input type="text" id="planInput" placeholder="Enter a plan">
+                    <button id="addPlanBtn">Add Plan</button>
+                    <button id="clearPlansBtn">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <audio id="alarmSound" src="alarm.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
